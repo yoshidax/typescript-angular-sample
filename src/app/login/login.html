@@ -1,0 +1,20 @@
+<section ng-controller="LoginCtrl as login">
+	<header><h1>login form</h1></header>
+	<form name="loginForm" ng-submit="login.login()">
+		<p>please input</p>
+		<fieldset>
+			<legend>login id</legend>
+			<input type="text" name="loginId"
+				ng-model="login.loginId" ng-required="true"
+				ng-minlength="5" ng-maxlength="10">
+		</fieldset>
+		<fieldset>
+			<legend>password</legend>
+			<input type="password" name="password"
+				ng-model="login.password" ng-required="true"
+				ng-minlength="5" ng-maxlength="10">
+		</fieldset>
+		<input type="submit" value="login">
+	</form>
+	<p class="error-messages" ng-if="loginForm.$dirty && loginForm.$invalid">入力内容に誤りがあります。</p>
+</section>
