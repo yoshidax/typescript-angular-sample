@@ -100,3 +100,5 @@ Session.vim
 .tmp
 bower_components/
 dist/
+
+.idea

@@ -1,3 +1,5 @@
+/// <reference path="../../../.tmp/typings/tsd" />
+
 module typescriptAngular {
   'use strict';
 
